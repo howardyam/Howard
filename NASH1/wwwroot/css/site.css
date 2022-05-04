@@ -24,10 +24,10 @@ body {
 }
 /*Header Styling*/
 
-#top{
+#top{ /* Index 2 head*/
     color:black;
     text-align:left;
-    font-size:80px;
+    font-size:60px;
     font-family: "Arial", monospace;
 }
 #top1{
@@ -38,8 +38,8 @@ body {
 }
 /* Navigation bar styling*/
 
-/*Navbar image styling*/
-#navbar img{
+/* image styling*/
+#navbar img{ /*food shop top image*/
     display:block;
     width: 50px;
     height:50px;
@@ -52,21 +52,24 @@ body {
     display:flex;
     flex-direction: column;
     background-color: deepskyblue;
-    height: 14vh;
-    width: 100vw;
+    height: 14vh;   
+    width: 60vw;
     font-family: 'Ubuntu Mono', monospace;
-    margin-top:10px;
+    margin-top:80px;
    border: 2px solid black;
    border-radius:15px;
 }
 
 
 /*Navbar content functionality*/
-#navcontent{
+#navcontent{ /*index 2 */
     display: flex;
     justify-content: center;
+    font-size: 30px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: auto
+   
 }
-
 
 /*Navbar content styling*/
 ul li{
@@ -91,7 +94,7 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 60vw;
     height:63vh;
 }
 
@@ -99,7 +102,7 @@ ul li a:hover{
 #container1::before{
     content:'';
     background: url("./1.jpg") no-repeat center center/cover;
-    width: 100vw;
+    width: 60vw;
     height:59vh;
     position: absolute;
     top:0px;
@@ -114,26 +117,42 @@ ul li a:hover{
 }
 
 #row1{
-   color: black;
+   color: black;    
     font-weight:bold;
     font-size: 2rem;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 /*Button Styling*/
 .btn{
-    margin-top:15px;
+    margin-top:70px;
     border: 3px solid white;
     border-radius:15px;
-    background-color:yellow;
+    background-color:deepskyblue;
     font-size:20px;
     font-weight: bold;
     font-family: 'Ubuntu Mono', monospace;
 }
 .btn:hover{
     cursor: pointer;
-    background-color: red;
+    background-color: deepskyblue;
 }
+
+#container5 {
+    display: flex;
+    justify-content: space-evenly;
+}
+#location {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+
 
 
 #container3{
@@ -155,7 +174,7 @@ ul li a:hover{
 }
 #row2::before{
     content: '';
-    background-color: blueviolet;
+    background-color: white;
     position: absolute;
     top: 0px;
     left:0px;
@@ -191,14 +210,16 @@ ul li a:hover{
 }
 
 #top3{
-    text-align: center;
+    text-align: justify;
     color:red;
     font-family: 'Ubuntu Mono', monospace;
 }
-#container4{
+#container4 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    margin: 41px;
+    margin: 20px;
+    width: 60vw;
+    height: 40vh;
 }  
 #row4{
     width: 29vw;
@@ -209,16 +230,18 @@ ul li a:hover{
     justify-content:center;
     align-items:flex-end;
     border-radius: 15px;
+    margin-top:50px;
 }
-#row5{
+#row5 {
     width: 29vw;
     height: 360px;
     border: 2px solid black;
-    background:url('a2.jpeg') no-repeat center center/cover;
+    background: url('a2.jpeg') no-repeat center center/cover;
     display: flex;
-    justify-content:center;
-    align-items:flex-end;
+    justify-content: center;
+    align-items: flex-end;
     border-radius: 15px;
+    margin-top: 50px;
 }
 #row6{
     width: 30vw;

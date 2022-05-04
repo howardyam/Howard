@@ -7,6 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="Order\**" />
+    <Content Remove="Migrations\**" />
+    <Content Remove="Order\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="Order\**" />
+    <None Remove="Migrations\**" />
+    <None Remove="Order\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\FoodDbContext.cs" />
+    <Compile Remove="Models\FoodOrder.cs" />
     <Compile Remove="Pages\Shared\AssemblyInfo.cs" />
     <Compile Remove="Pages\Shared\Class.cs" />
     <Compile Remove="Pages\Shared\Index.cshtml.cs" />
@@ -15,6 +28,20 @@
 
   <ItemGroup>
     <Content Remove="Pages\Shared\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="wwwroot\images\pictures\" />
   </ItemGroup>
 
 </Project>
