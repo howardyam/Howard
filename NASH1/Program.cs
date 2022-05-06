@@ -1,4 +1,5 @@
 
+
 using Microsoft.EntityFrameworkCore;
 
 
@@ -32,3 +33,10 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute("Default", "{controller=Home}/{action=Index}/{id?}");
+});
