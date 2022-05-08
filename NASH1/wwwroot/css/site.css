@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    
     background-image: url("Cover1.jpg");
     text-align: justify-all;
     background-color: lightgrey;
@@ -174,3 +175,176 @@ form {
 
    }
    
+
+   /*restaurant*/
+
+
+.mainResTitle {
+    padding: initial;
+    font-weight: 300;
+    font-size: 50px;
+    margin: 100px 0 100px 0;
+    text-align: center;
+    color: black;
+}
+.cover {
+    width: 900px;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    margin:auto;
+}
+
+   .box{
+       margin:10px;
+       width:400px;
+       height:400px;
+       box-shadow: -1px 0 10px #0000;
+
+   }
+
+   img{
+       width:200px;
+       height:150px;
+   }
+
+   /*KFC*/
+#menu {
+    background: whitesmoke;
+}
+
+.brand-logo {
+    padding: 0 30px;
+}
+
+    .brand-logo img {
+        width: 150px;
+        height: 150px;
+        margin-top: -20px;
+    }
+
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 12px;
+    color: rgb(128,129,129);
+    font-weight: 300;
+}
+
+    .menu-item a:hover {
+        background: rgb(250,212,218);
+    }
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#header .address {
+    font-size: 20px;
+}
+
+.your-address {
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.add-box i {
+    font-size: 20px;
+}
+
+.util i, .user i {
+    font-size: 18px;
+    margin: 0 16px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: crimson;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+    .util i:active, user i:active {
+        color: white;
+        background: crimson;
+    }
+
+.food-items {
+}
+
+#nica, #pelicana {
+    margin-top: 40px;
+}
+
+#category-name, .item-menu {
+    margin: 10px;
+    font-size: 35px;
+    color: coral;
+}
+
+#item-card {
+    
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    border-radius: 10px;
+    background-color:white;
+    cursor: pointer;
+    
+}
+
+#card-top {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+
+
+#item-card img {
+   
+    width: 120px;
+    height: 100px;
+    border-radius: 60%;
+    margin: auto;
+    display: auto;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+
+
+
+#item-name {
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+#item-price {
+    margin: 0;
+    color: rgb(2,27,27);
+    font-size: 18px;
+}
+
+@media only screen and (max-width:1131px) {
+    #row1 {
+        width: 42vw;
+    }
+
+    #row2 {
+        width: 45vw;
+    }
+}

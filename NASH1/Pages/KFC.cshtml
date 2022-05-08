@@ -5,47 +5,58 @@
 
 
 <body>
-	 <div id="food-items" class="food-items">
-            <div id="nica">
-            <p id="category-name">Nica Plus</p>
-            <div id="item-card" >
+    <h1 class="mainResSubTiltle">Please choose and enter the amouunt of food your would like to order</h1>
+
+    <div class="cover">
+
+
+        <div class="box">
+            <div id="item-card">
                 <div id="card-top">
                 </div>
-                <img src="~/images/KFCBurger.png" width="200px" height="100px"/>
-                <p id="item-name">Chicken Curry</p>
+                <img src="~/images/KFCBurger.png" width="200px" height="100px" />
+                <p id="item-name">KFC Burger</p>
                 <p id="item-price">$10.00</p>
-                <div>
-                <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 rounded-5 alert-light col-4">
-		        <input type="number" asp-for="Food.KFCBurger" placeholder="KFCBurder" />KFCBurger
-                 <input type="number" asp-for="Food.KFCWedges" placeholder="KFCWedges" />KFCWedges
+            </div>
+        </div>
+
+
+
+        <div class="box">
+            <div id="item-card">
+                <img src="~/images/KFCWedges.png" width="200px" height="100px" />
+                <p id="item-name">KFC Wedges</p>
+                <p id="item-price">$10.00</p>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div id="item-card">
+                <img src="~/images/KFCFriedChicken.png" width="200px" height="100px" />
+                <p id="item-name">KFC Chicken</p>
+                <p id="item-price">$10.00</p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="cover">
+        
+        
+        
+            <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 rounded-5 alert-light col-4">
+                <input type="number" asp-for="Food.KFCBurger" placeholder="KFCBurder" />KFCBurger
+                <input type="number" asp-for="Food.KFCWedges" placeholder="KFCWedges" />KFCWedges
                 <input type="number" asp-for="Food.KFChicken" placeholder="KFChicken" />KFChicken
                 <button class="btn btn-primary mt-1" type="submit">Order My Food</button>
-	            </form>
-                </div>
-            </div>
 
+            </form>
+        
+    </div>
 
-
-             <div id="nica">
-            <p id="category-name">Nica Plus</p>
-            <div id="item-card" >
-                <div id="card-top">                   
-                </div>
-                <img src="~/images/KFCWedges.png" width="200px" height="100px"/>
-                <p id="item-name">Chicken Curry</p>
-                <p id="item-price">$10.00</p> 
-                
-            </div>
-
-
-             <div id="nica">
-            <p id="category-name">Nica Plus</p>
-            <div id="item-card" >
-                <div id="card-top">
-                </div>
-                <img src="~/images/KFCFriedChicken.png" width="200px" height="100px"/>
-                <p id="item-name">Chicken Curry</p>
-                <p id="item-price">$10.00</p>
-            </div>
 
 </body>
